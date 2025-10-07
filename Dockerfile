@@ -37,8 +37,7 @@ RUN composer install --no-interaction --prefer-dist --optimize-autoloader --no-d
 RUN chown -R www-data:www-data /var/www/html/storage
 RUN chmod -R 775 /var/www/html/storage
 
-# Generate application key
-RUN php artisan key:generate
+
 
 # Optimize the application
 RUN php artisan optimize
