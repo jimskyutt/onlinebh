@@ -1,0 +1,34 @@
+#mapModal .modal-dialog {
+    max-width: 800px;
+    width: 90%;
+    height: 80vh;
+    margin: 1.75rem auto;
+}
+#mapModal .modal-content {
+    height: 100%;
+    border-radius: 0.5rem;
+}
+#mapModal .modal-body {
+    padding: 0;
+    overflow: hidden;
+}
+#map {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+}
+#mapModal .modal-footer {
+    padding: 0.75rem 1rem;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+.leaflet-top.leaflet-right {
+    margin-top: 10px;
+}
+.leaflet-control-zoom {
+    margin-top: 60px;
+}
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

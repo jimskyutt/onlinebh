@@ -1,0 +1,46 @@
+databases:
+  - name: online_bh_db
+    databaseName: online_bh
+    user: online_bh_user
+    plan: free
+
+services:
+  - type: web
+    name: online-bh
+    env: php
+    buildCommand: "./build.sh"
+    startCommand: "bash start.sh"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: false
+      - key: APP_KEY
+        generateValue: true
+      - key: APP_URL
+        sync: false
+      - key: DB_CONNECTION
+        fromDatabase:
+          name: online_bh_db
+          property: connectionString
+      - key: DB_DATABASE
+        fromDatabase:
+          name: online_bh_db
+          property: databaseName
+      - key: DB_USERNAME
+        fromDatabase:
+          name: online_bh_db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: online_bh_db
+          property: password
+      - key: DB_HOST
+        fromDatabase:
+          name: online_bh_db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: online_bh_db
+          property: port
+    plan: free
