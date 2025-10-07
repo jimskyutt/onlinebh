@@ -1,0 +1,42 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# Application caches
+bootstrap/cache/*
+storage/framework/views/*.php
+storage/logs/*.log
+
+# Testing
+.phpunit.result.cache
+
+# Local development
+Homestead.json
+Homestead.yaml
+
+# IDE specific files
+.idea
+.vscode
+.fleet
+
+# Debug logs
+npm-debug.log
+yarn-error.log
+
+# Build files
+/public/hot
+/public/storage
+/storage/*.key
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
