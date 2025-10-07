@@ -1,3 +1,4 @@
+# Laravel 9+ default .gitignore
 /node_modules
 /public/build
 /public/hot
@@ -16,3 +17,28 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Additional Laravel specific
+bootstrap/cache/*
+!bootstrap/cache/.gitignore
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 4 with SCSS
+public/css/compiled/
+
+# Laravel 4 with Composer
+/vendor/
+
+# Laravel 4 with IDE helper
+_ide_helper.php
+
+# Laravel 4 specific
+*.log
+php_errors.log
